@@ -1,0 +1,31 @@
+@wayfinder
+	target:
+	
+	idle
+	targeting -> @tracker(target:)
+	error
+
+	SET_TARGET
+	CLEAR_TARGET
+
+
+@tracker
+	_target:
+	location:
+
+	idle
+	gettingLocation
+	trackingLocation
+	error 
+
+	GET_LOCATION
+	TRACK_LOCATION
+
+actions in UI in overlay with higher z-index, covers main on 'idle'
+_________________________________________
+				
+				targetInfo
+				
+
+set/clear target	|	get/track/untrack
+_________________________________________
